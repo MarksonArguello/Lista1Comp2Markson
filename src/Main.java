@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 import exercicios.Exercicio1;
 import exercicios.Exercicio2;
+import exercicios.Exercicio3;
 
 public class Main {
     static Scanner sc = new Scanner(System.in);
@@ -23,6 +24,10 @@ public class Main {
                     break;
                 case 2:
                     Exercicio2.executar();
+                    break;
+                case 3:
+                    Exercicio3.executar();
+                    break;
             }
             System.out.println("Deseja continuar?\n1 - sim\n2 - não");
             opcao = lerOpcao();
