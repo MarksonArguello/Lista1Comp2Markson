@@ -2,9 +2,11 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 import exercicios.Exercicio1;
+import exercicios.Exercicio2;
 
 public class Main {
     static Scanner sc = new Scanner(System.in);
+
     public static void executarMenu() {
         int opcao;
         do{
@@ -18,6 +20,9 @@ public class Main {
             switch (opcao) {
                 case 1:
                     Exercicio1.executar();
+                    break;
+                case 2:
+                    Exercicio2.executar();
             }
             System.out.println("Deseja continuar?\n1 - sim\n2 - não");
             opcao = lerOpcao();
