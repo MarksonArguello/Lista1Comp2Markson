@@ -15,6 +15,14 @@ import java.util.Scanner;
 
 public class Exercicio2 {
     private static Scanner sc = new Scanner(System.in);
+    /**
+     * Lê e ordena palavras.
+     * <p>
+     * Lê várias palavras em uma linha separadas por espaço, ordena e mostra na tela a lista ordenada.
+     * </p>
+     *
+     */
+
     public static void executar(){
 
         System.out.println("Digite as palavras: ");

@@ -9,26 +9,45 @@ package exercicios.classesExercicio3;
 
 
 public class Circulo {
-    public Vertice[] vertices;
+    public Ponto[] pontos;
 
     private double raio;
     private double pi = 3.1415;
 
-    public Circulo(Vertice[] vertices){
-        this.vertices = vertices;
-        raio = Vertice.distanciaEntreDoisPontos(vertices[0], vertices[1]);
-        System.out.println("\n"+raio+"\n");
+    /**
+     * Construtor de um objeto do tipo Circulo
+     * <p>
+     *     Contrutor de um círculo e calcula o raio do círculo
+     * </p>
+     * @param pontos
+     */
+
+    public Circulo(Ponto[] pontos){
+        this.pontos = pontos;
+        raio = Ponto.distanciaEntreDoisPontos(pontos[0], pontos[1]);
     }
+
+    /**
+     * Calcula a área do círculo
+     * @return area Área do circulo
+     */
 
     public double calculaArea() {
         double area = pi * raio * raio;
         return area;
     }
-
+    /**
+     * Calcula o perímetro do círculo
+     * @return Perímetro do circulo
+     */
     public double calcularPerimetro() {
         return pi * 2 * raio;
     }
 
+    /**
+     * Retorna uma string com informações do círculo
+     * @return String com área e perímetro
+     */
     public String toString(){
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append("A área do círculo é ");

@@ -58,8 +58,8 @@ public class Main {
      * Executa diversas vezes até ser um número inteiro maior que 0.
      * Lança um InputMismatchException caso não seja digitado um inteiro
      * </p>
+     *
      * @return Número inteiro maior que 0.
-     * @exception InputMismatchException Caso não seja lido um número inteiro
      */
     public static int lerOpcao() {
         int numeroInteiro = 0;

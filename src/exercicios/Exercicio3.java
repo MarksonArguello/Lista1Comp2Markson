@@ -16,12 +16,21 @@ import java.util.Scanner;
 public class Exercicio3 {
     static Scanner sc = new Scanner(System.in);
 
-    public static Vertice lerVertice(int i){
+    /**
+     * Lê um ponto de um vértice.
+     * <p>
+     * Lê dois inteiros x e y e retorna um novo ponto com esses atributos.
+     * </p>
+     * @param i Posição do ponto (Se é o 1º, 2º, 3º...)
+     * @return Um objeto do tipo Ponto
+     */
+
+    public static Ponto lerPonto(int i){
         double  x = 0, y = 0;
         boolean numeroLido = false;
         while (!numeroLido){
             try {
-                System.out.println("Vértice " + i);
+                System.out.println("Ponto " + i);
                 System.out.print("Digite x: ");
                 x = sc.nextDouble();
                 System.out.print("Digite y: ");
@@ -35,9 +44,16 @@ public class Exercicio3 {
                 sc.next();
             }
         }
-        return new Vertice(x, y);
+        return new Ponto(x, y);
     }
-
+    /**
+     * Executa o programa para o exercício 3.
+     * <p>
+     * Executa o menu e pede os pontos de acordo com a figura geométrica escolhida.
+     * Após isso calcula e mostra na tela a área e perimetro da figura escolhida de acordo com seus vértices.
+     * </p>
+     *
+     */
     public static void executar(){
         System.out.println("Qual polígono?");
         System.out.println("1 - Circulo");
@@ -65,31 +81,31 @@ public class Exercicio3 {
         }while (!numeroLido );
         switch (opcao) {
             case 1:
-                Vertice[] verticeCirculo = new Vertice[2];
+                Ponto[] pontoCirculo = new Ponto[2];
                 for(int indice = 0; indice < 2; indice++)
-                    verticeCirculo[indice] = lerVertice(indice+1);
-                Circulo circulo = new Circulo(verticeCirculo);
+                    pontoCirculo[indice] = lerPonto(indice+1);
+                Circulo circulo = new Circulo(pontoCirculo);
                 System.out.println(circulo);
                 break;
             case 2:
-                Vertice[] verticeTriangulo = new Vertice[3];
+                Ponto[] pontoTriangulo = new Ponto[3];
                 for(int indice = 0; indice < 3; indice++)
-                    verticeTriangulo[indice] = lerVertice(indice+1);
-                Triangulo triangulo = new Triangulo(verticeTriangulo);
+                    pontoTriangulo[indice] = lerPonto(indice+1);
+                Triangulo triangulo = new Triangulo(pontoTriangulo);
                 System.out.println(triangulo);
                 break;
             case 3:
-                Vertice[] verticeRetangulo = new Vertice[4];
+                Ponto[] pontoRetangulo = new Ponto[4];
                 for(int indice = 0; indice < 4; indice++)
-                    verticeRetangulo[indice] = lerVertice(indice+1);
-                Retangulo retangulo = new Retangulo(verticeRetangulo);
+                    pontoRetangulo[indice] = lerPonto(indice+1);
+                Retangulo retangulo = new Retangulo(pontoRetangulo);
                 System.out.println(retangulo);
                 break;
             case 4:
-                Vertice[] verticeTrapezio = new Vertice[4];
+                Ponto[] pontoTrapezio = new Ponto[4];
                 for(int indice = 0; indice < 4; indice++)
-                    verticeTrapezio[indice] = lerVertice(indice+1);
-                Trapezio trapezio = new Trapezio(verticeTrapezio);
+                    pontoTrapezio[indice] = lerPonto(indice+1);
+                Trapezio trapezio = new Trapezio(pontoTrapezio);
                 System.out.println(trapezio);
                 break;
         }

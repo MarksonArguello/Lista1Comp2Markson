@@ -13,6 +13,13 @@ import java.util.Scanner;
 public class Exercicio1 {
     private static Scanner sc = new Scanner(System.in);
 
+    /**
+     * Lê um vetor e calcula sua média
+     * <p>
+     *     Executa um menu que irá pedir o tamnanho de um vetor, seus elementos e irá calcular e mostrar a média dos elementos.
+     * </p>
+     */
+
     public static void executar() {
         int tamanhoDaLista = 0;
         float[] lista;
@@ -43,6 +50,13 @@ public class Exercicio1 {
         }
     }
 
+    /**
+     * Lê um número inteiro.
+     * <p>
+     * Função que repetirá até ler um número inteiro da entrada padrão.
+     * </p>
+     * @return numeroInteiro Número inteiro lido
+     */
     private static int lerNumeroInteiro() {
         int numeroInteiro = 0;
         boolean numeroLido = false;
@@ -64,6 +78,14 @@ public class Exercicio1 {
         return numeroInteiro;
 
     }
+
+    /**
+     * Lê um número com virgula.
+     * <p>
+     * Função que repetirá até ler um número com virgula da entrada padrão.
+     * </p>
+     * @return numero Número com virgula lido
+     */
 
     private static float lerNumeroFloat() {
         float numero = 0;
@@ -87,6 +109,15 @@ public class Exercicio1 {
 
     }
 
+    /**
+     * Cria um vetor e lê seus elementos.
+     * <p>
+     * Cria um vetor com o tamanho passado por parâmetro e lê os seus elementos que são do tipo float.
+     * </p>
+     * @param tamanhoDaLista Tamanho do Vetor
+     * @return lista Vetor com elementos
+     */
+
     private static float[] criarELerLista(int tamanhoDaLista) {
         float[] lista = new float[tamanhoDaLista];
 
@@ -99,6 +130,15 @@ public class Exercicio1 {
         return lista;
     }
 
+    /**
+     * Calcula a média dos elementos de um vetor.
+     * <p>
+     *     Recebe um vetor e seu tamanho como parâmetros e retorna a média de seus elementos.
+     * </p>
+     * @param tamanhoDaLista Tamanho do vetor passado
+     * @param lista Vetor que a função irá calcular a média
+     * @return media Media dos elementos do vetor.
+     */
 
     private static float calcularMediaLista(int tamanhoDaLista, float[] lista) {
         float media = 0f;

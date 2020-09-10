@@ -9,29 +9,49 @@ package exercicios.classesExercicio3;
 
 
 public class Trapezio {
-    public Vertice[] vertices;
+    public Ponto[] pontos;
 
-    public Trapezio(Vertice[] vertices){
-        this.vertices = vertices;
+    /**
+     * Construtor do trapézio
+     * @param pontos
+     */
+
+    public Trapezio(Ponto[] pontos){
+        this.pontos = pontos;
 
     }
 
+    /**
+     * Calcula a área do trapézio
+     * @return área
+     */
+
     public double calculaArea(){
-        Vertice[] vertice1 = {vertices[0], vertices[1], vertices[2]};
-        Triangulo triangulo1 = new Triangulo(vertice1);
-        Vertice[] vertice2 = {vertices[2], vertices[3], vertices[0]};
-        Triangulo triangulo2 = new Triangulo(vertice2);
+        Ponto[] ponto1 = {pontos[0], pontos[1], pontos[2]};
+        Triangulo triangulo1 = new Triangulo(ponto1);
+        Ponto[] ponto2 = {pontos[2], pontos[3], pontos[0]};
+        Triangulo triangulo2 = new Triangulo(ponto2);
 
         return triangulo1.calculaArea() + triangulo2.calculaArea();
     }
 
+    /**
+     * Calcula o perímetro do trapézio
+     * @return perímetro
+     */
+
     public double calcularPerimetro(){
-        double perimetro = Vertice.distanciaEntreDoisPontos(vertices[0], vertices[1]);
-        perimetro += Vertice.distanciaEntreDoisPontos(vertices[1], vertices[2]);
-        perimetro += Vertice.distanciaEntreDoisPontos(vertices[2], vertices[3]);
-        perimetro += Vertice.distanciaEntreDoisPontos(vertices[3], vertices[0]);
+        double perimetro = Ponto.distanciaEntreDoisPontos(pontos[0], pontos[1]);
+        perimetro += Ponto.distanciaEntreDoisPontos(pontos[1], pontos[2]);
+        perimetro += Ponto.distanciaEntreDoisPontos(pontos[2], pontos[3]);
+        perimetro += Ponto.distanciaEntreDoisPontos(pontos[3], pontos[0]);
         return perimetro;
     }
+
+    /**
+     *  Retorna uma string com informações do trapézio
+     * @return String com área e perímetro
+     */
     public String toString(){
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append("A área do trapézio é ");

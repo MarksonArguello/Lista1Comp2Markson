@@ -9,29 +9,46 @@ package exercicios.classesExercicio3;
 
 
 public class Retangulo {
-    public Vertice[] vertices;
+    public Ponto[] pontos;
 
-    public Retangulo(Vertice[] vertices){
-        this.vertices = vertices;
+    /**
+     * Construtor de um retângulo
+     * @param pontos
+     */
 
+    public Retangulo(Ponto[] pontos){
+        this.pontos = pontos;
     }
 
+    /**
+     * Calcula a área de um retângulo
+     * @return Área do retângulo
+     */
+
     public double calculaArea(){
-        Vertice[] vertice1 = {vertices[0], vertices[1], vertices[2]};
-        Triangulo triangulo1 = new Triangulo(vertice1);
-        Vertice[] vertice2 = {vertices[2], vertices[3], vertices[0]};
-        Triangulo triangulo2 = new Triangulo(vertice2);
+        Ponto[] ponto1 = {pontos[0], pontos[1], pontos[2]};
+        Triangulo triangulo1 = new Triangulo(ponto1);
+        Ponto[] ponto2 = {pontos[2], pontos[3], pontos[0]};
+        Triangulo triangulo2 = new Triangulo(ponto2);
 
         return triangulo1.calculaArea() + triangulo2.calculaArea();
     }
-
+    /**
+     * Calcula o perimetro de um retângulo
+     * @return perimetro
+     */
     public double calcularPerimetro(){
-        double perimetro = Vertice.distanciaEntreDoisPontos(vertices[0], vertices[1]);
-        perimetro += Vertice.distanciaEntreDoisPontos(vertices[1], vertices[2]);
-        perimetro += Vertice.distanciaEntreDoisPontos(vertices[2], vertices[3]);
-        perimetro += Vertice.distanciaEntreDoisPontos(vertices[3], vertices[0]);
+        double perimetro = Ponto.distanciaEntreDoisPontos(pontos[0], pontos[1]);
+        perimetro += Ponto.distanciaEntreDoisPontos(pontos[1], pontos[2]);
+        perimetro += Ponto.distanciaEntreDoisPontos(pontos[2], pontos[3]);
+        perimetro += Ponto.distanciaEntreDoisPontos(pontos[3], pontos[0]);
         return perimetro;
     }
+
+    /**
+     * Retorna uma string com informações do retângulo
+     * @return String com área e perímetro
+     */
 
     public String toString(){
         StringBuilder stringBuilder = new StringBuilder();
