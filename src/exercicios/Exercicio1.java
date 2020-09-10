@@ -3,8 +3,45 @@ package exercicios;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+/**
+ * @author  Markson Arguello <marksonva@dcc.ufrj.br>
+ *
+ *
+ * Executa o programa pedido no exercício 1.
+ */
+
 public class Exercicio1 {
     private static Scanner sc = new Scanner(System.in);
+
+    public static void executar() {
+        int tamanhoDaLista = 0;
+        float[] lista;
+        System.out.print("Digite o tamanho da lista: ");
+
+        while (tamanhoDaLista <= 0) {
+            try {
+                tamanhoDaLista = lerNumeroInteiro();
+                while (tamanhoDaLista == 0) {
+                    tamanhoDaLista = lerNumeroInteiro();
+                }
+                lista = criarELerLista(tamanhoDaLista);
+
+                float mediaDaLista = calcularMediaLista(tamanhoDaLista, lista);
+
+                System.out.printf("A média da lista é %.2f\n", mediaDaLista);
+
+            }
+            catch (NegativeArraySizeException e){
+                System.out.println("Tamanho não pode ser negativo");
+
+            }
+
+        }
+        while (tamanhoDaLista == 0) {
+            System.out.println("Tamanho da lista não pode ser 0. Digite novamente.");
+            tamanhoDaLista = lerNumeroInteiro();
+        }
+    }
 
     private static int lerNumeroInteiro() {
         int numeroInteiro = 0;
@@ -77,39 +114,6 @@ public class Exercicio1 {
 
 
 
-    public static void executar() {
-        int tamanhoDaLista = 0;
-        float[] lista;
-        System.out.print("Digite o tamanho da lista: ");
 
-        while (tamanhoDaLista <= 0) {
-            try {
-                tamanhoDaLista = lerNumeroInteiro();
-                while (tamanhoDaLista == 0) {
-                    tamanhoDaLista = lerNumeroInteiro();
-                }
-                lista = criarELerLista(tamanhoDaLista);
-
-                float mediaDaLista = calcularMediaLista(tamanhoDaLista, lista);
-
-                System.out.printf("A média da lista é %.2f\n", mediaDaLista);
-
-            }
-            catch (NegativeArraySizeException e){
-                System.out.println("Tamanho não pode ser negativo");
-
-            }
-
-        }
-        while (tamanhoDaLista == 0) {
-            System.out.println("Tamanho da lista não pode ser 0. Digite novamente.");
-            tamanhoDaLista = lerNumeroInteiro();
-        }
-
-
-
-
-
-    }
 }
 

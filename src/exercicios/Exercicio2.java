@@ -5,6 +5,14 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.Scanner;
 
+/**
+ * @author  Markson Arguello <marksonva@dcc.ufrj.br>
+ *
+ *
+ * Executa o programa pedido no exercício 2.
+ */
+
+
 public class Exercicio2 {
     private static Scanner sc = new Scanner(System.in);
     public static void executar(){

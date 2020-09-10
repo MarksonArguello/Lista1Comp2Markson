@@ -1,6 +1,12 @@
 package exercicios.classesExercicio3;
 
-import java.nio.channels.Pipe;
+/**
+ * @author  Markson Arguello <marksonva@dcc.ufrj.br>
+ *
+ *
+ * Classe para representar um círculo.
+ */
+
 
 public class Circulo {
     public Vertice[] vertices;
@@ -11,6 +17,7 @@ public class Circulo {
     public Circulo(Vertice[] vertices){
         this.vertices = vertices;
         raio = Vertice.distanciaEntreDoisPontos(vertices[0], vertices[1]);
+        System.out.println("\n"+raio+"\n");
     }
 
     public double calculaArea() {

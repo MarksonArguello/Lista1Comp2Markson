@@ -1,5 +1,13 @@
 package exercicios.classesExercicio3;
 
+/**
+ * @author  Markson Arguello <marksonva@dcc.ufrj.br>
+ *
+ *
+ * Classe para representar um vértice.
+ */
+
+
 public class Vertice {
     private double x;
     private double y;

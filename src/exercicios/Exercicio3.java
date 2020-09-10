@@ -5,6 +5,14 @@ import exercicios.classesExercicio3.*;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+/**
+ * @author  Markson Arguello <marksonva@dcc.ufrj.br>
+ *
+ *
+ * Executa o programa pedido no exercício 3.
+ */
+
+
 public class Exercicio3 {
     static Scanner sc = new Scanner(System.in);
 
@@ -58,34 +66,29 @@ public class Exercicio3 {
         switch (opcao) {
             case 1:
                 Vertice[] verticeCirculo = new Vertice[2];
-                verticeCirculo[0] = lerVertice(1);
-                verticeCirculo[1] = lerVertice(2);
+                for(int indice = 0; indice < 2; indice++)
+                    verticeCirculo[indice] = lerVertice(indice+1);
                 Circulo circulo = new Circulo(verticeCirculo);
                 System.out.println(circulo);
                 break;
             case 2:
                 Vertice[] verticeTriangulo = new Vertice[3];
-                verticeTriangulo[0] = lerVertice(1);
-                verticeTriangulo[1] = lerVertice(2);
-                verticeTriangulo[2] = lerVertice(3);
+                for(int indice = 0; indice < 3; indice++)
+                    verticeTriangulo[indice] = lerVertice(indice+1);
                 Triangulo triangulo = new Triangulo(verticeTriangulo);
                 System.out.println(triangulo);
                 break;
             case 3:
                 Vertice[] verticeRetangulo = new Vertice[4];
-                verticeRetangulo[0] = lerVertice(1);
-                verticeRetangulo[1] = lerVertice(2);
-                verticeRetangulo[2] = lerVertice(3);
-                verticeRetangulo[3] = lerVertice(4);
+                for(int indice = 0; indice < 4; indice++)
+                    verticeRetangulo[indice] = lerVertice(indice+1);
                 Retangulo retangulo = new Retangulo(verticeRetangulo);
                 System.out.println(retangulo);
                 break;
             case 4:
                 Vertice[] verticeTrapezio = new Vertice[4];
-                verticeTrapezio[0] = lerVertice(1);
-                verticeTrapezio[1] = lerVertice(2);
-                verticeTrapezio[2] = lerVertice(3);
-                verticeTrapezio[3] = lerVertice(4);
+                for(int indice = 0; indice < 4; indice++)
+                    verticeTrapezio[indice] = lerVertice(indice+1);
                 Trapezio trapezio = new Trapezio(verticeTrapezio);
                 System.out.println(trapezio);
                 break;

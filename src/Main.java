@@ -4,10 +4,22 @@ import java.util.Scanner;
 import exercicios.Exercicio1;
 import exercicios.Exercicio2;
 import exercicios.Exercicio3;
+/**
+ * @author  Markson Arguello <marksonva@dcc.ufrj.br>
+ *
+ *
+ * Classe principal do programa.
+ */
 
 public class Main {
     static Scanner sc = new Scanner(System.in);
-
+    /**
+     * Executa o menu.
+     * <p>
+     * Executa o menu e lê a opção para rodar qual exercício o usuário quiser.
+     * </p>
+     *
+     */
     public static void executarMenu() {
         int opcao;
         do{
@@ -39,7 +51,16 @@ public class Main {
 
         }while (opcao != 2);
     }
-
+    /**
+     * Lê uma opção.
+     * <p>
+     * Lê uma opção como número inteiro.
+     * Executa diversas vezes até ser um número inteiro maior que 0.
+     * Lança um InputMismatchException caso não seja digitado um inteiro
+     * </p>
+     * @return Número inteiro maior que 0.
+     * @exception InputMismatchException Caso não seja lido um número inteiro
+     */
     public static int lerOpcao() {
         int numeroInteiro = 0;
 
@@ -58,7 +79,13 @@ public class Main {
 
         return numeroInteiro;
     }
-
+    /**
+     * Função principal.
+     * <p>
+     * Metodo que chama o menu principal do programa.
+     * </p>
+     *
+     */
     public static void main(String[] args) {
         executarMenu();
     }
