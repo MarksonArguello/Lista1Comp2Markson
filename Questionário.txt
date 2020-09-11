@@ -1,0 +1,34 @@
+1 - Qual exercício você considerou o mais difícil de ser resolvido e quais foram as dificuldades encontradas?.
+O exercício mais difícil foi o número 3, a maior dificuldade foi encontrar a fórmula para calcular a área das figuras a partir de pontos.
+
+2 -Qual método foi utilizado para a leitura dos números na primeira questão e quais exceções podem ocorrer usando tal método?
+Utilizei 2 funções que utilizam o scanner, a função lerNumeroInteiro() responsável por ler apenas inteiros 
+e a função lerNumeroFloat()  responsável por ler apenas números reais. 
+Ambas as funções lançam a InputMismatchException caso o que seja digitado não seja um número do tipo pedido.
+
+3 - Que fluxo alternativo de código foi adotado para lidar com exceções na primeira questão?
+Primeiro será pedido o tamanho do vetor, criei um while para caso o número seja menor ou igual a 0,
+o loop repetirá até que seja maior que 0. Caso o número digitado seja 0 apenas exibirá uma mensagem e 
+o programa vai ler outro número, caso seja um número negativo o programa irá tratar a execeção NegativeArraySizeException.
+Em ambos os casos ele continuará no loop até ler um número válido
+
+
+4 -Que abordagem foi usada para decidir sobre o fim da entrada na segunda questão.
+Usei o método nextLine() do scanner junto com o split(""), ou seja, irá pegar todas as palavras que estão separadas por espaço até o primerio enter.
+
+5 - Que abordagem foi usada para ordenar a lista na segunda questão?
+Usei o método sort da classe Collections passando a lista de palavras e String::compareToIgnoreCase como parâmetro.
+
+6 - De que forma os vértices foram representados na terceira questão?
+Criei uma classe Ponto em que todas as figuras tem um vetor de Ponto como seu atributo. Os vértices são as ligações entre os pontos, ou seja, 
+pontos[0] é ligado ao pontos[1] e isso forma um vértice. 
+
+
+7 - Como a representação escolhida para os vértices contribui na solução da questão?
+No caso do círculo eu calculo a distancia entre seus únicos dois pontos e esse será o raio, com o raio eu consigo calcular o perímetro e a área.
+No caso do triângulo eu uso uma fórmula com determinante de matriz em que os elementos da matriz são o x e y dos seus pontos.
+No caso do retângulos e trapézio eu os divido em dois triângulos, calculo a área dos dois triângulos e somo.
+
+
+8 - Houve alguma dificuldade na implementação das fórmulas matemáticas para cálculo de área / perímetro no programa? Quais?
+Não.
