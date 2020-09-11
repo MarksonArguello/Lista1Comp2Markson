@@ -30,6 +30,7 @@ pontos[0] é ligado ao pontos[1] e isso forma um vértice.
 No caso do círculo eu calculo a distancia entre seus únicos dois pontos e esse será o raio, com o raio eu consigo calcular o perímetro e a área.
 No caso do triângulo eu uso uma fórmula com determinante de matriz em que os elementos da matriz são o x e y dos seus pontos.
 No caso do retângulos e trapézio eu os divido em dois triângulos, calculo a área dos dois triângulos e somo.
+Tanto no triângulo como no trapézio e retângulo o perímetro é calculado medindo a distância entre seus pontos.
 
 
 8 - Houve alguma dificuldade na implementação das fórmulas matemáticas para cálculo de área / perímetro no programa? Quais?
