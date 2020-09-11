@@ -11,6 +11,8 @@ Primeiro será pedido o tamanho do vetor, criei um while para caso o número sej
 o loop repetirá até que seja maior que 0. Caso o número digitado seja 0 apenas exibirá uma mensagem e 
 o programa vai ler outro número, caso seja um número negativo o programa irá tratar a execeção NegativeArraySizeException.
 Em ambos os casos ele continuará no loop até ler um número válido
+Na leitura dos elementos do vetor caso seja digitado um número que não seja um número real então lançará uma execeção até que
+seja lido um número real.
 
 
 4 -Que abordagem foi usada para decidir sobre o fim da entrada na segunda questão.
