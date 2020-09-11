@@ -5,7 +5,7 @@ import exercicios.Exercicio1;
 import exercicios.Exercicio2;
 import exercicios.Exercicio3;
 /**
- * @author  Markson Arguello <marksonva@dcc.ufrj.br>
+ * @author  Markson Arguello - marksonva@dcc.ufrj.br
  *
  *
  * Classe principal do programa.
@@ -84,7 +84,7 @@ public class Main {
      * <p>
      * Metodo que chama o menu principal do programa.
      * </p>
-     *
+     * @param args Argumentos
      */
     public static void main(String[] args) {
         executarMenu();

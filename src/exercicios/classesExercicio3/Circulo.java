@@ -1,7 +1,7 @@
 package exercicios.classesExercicio3;
 
 /**
- * @author  Markson Arguello <marksonva@dcc.ufrj.br>
+ * @author  Markson Arguello - marksonva@dcc.ufrj.br
  *
  *
  * Classe para representar um círculo.
@@ -19,7 +19,7 @@ public class Circulo {
      * <p>
      *     Contrutor de um círculo e calcula o raio do círculo
      * </p>
-     * @param pontos
+     * @param pontos Pontos do circulo
      */
 
     public Circulo(Ponto[] pontos){
@@ -29,7 +29,7 @@ public class Circulo {
 
     /**
      * Calcula a área do círculo
-     * @return area Área do circulo
+     * @return area Area do circulo
      */
 
     public double calculaArea() {

@@ -6,7 +6,7 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 /**
- * @author  Markson Arguello <marksonva@dcc.ufrj.br>
+ * @author  Markson Arguello - marksonva@dcc.ufrj.br
  *
  *
  * Executa o programa pedido no exercício 3.

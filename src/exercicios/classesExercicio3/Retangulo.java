@@ -1,7 +1,7 @@
 package exercicios.classesExercicio3;
 
 /**
- * @author  Markson Arguello <marksonva@dcc.ufrj.br>
+ * @author  Markson Arguello - marksonva@dcc.ufrj.br
  *
  *
  * Classe para representar um retângulo.
@@ -13,7 +13,7 @@ public class Retangulo {
 
     /**
      * Construtor de um retângulo
-     * @param pontos
+     * @param pontos pontos do retângulo
      */
 
     public Retangulo(Ponto[] pontos){
@@ -22,7 +22,7 @@ public class Retangulo {
 
     /**
      * Calcula a área de um retângulo
-     * @return Área do retângulo
+     * @return Area do retângulo
      */
 
     public double calculaArea(){

@@ -1,7 +1,7 @@
 package exercicios.classesExercicio3;
 
 /**
- * @author  Markson Arguello <marksonva@dcc.ufrj.br>
+ * @author  Markson Arguello - marksonva@dcc.ufrj.br
  *
  *
  * Classe para representar um trapézio.
@@ -13,7 +13,7 @@ public class Trapezio {
 
     /**
      * Construtor do trapézio
-     * @param pontos
+     * @param pontos Pontos do trapézio
      */
 
     public Trapezio(Ponto[] pontos){

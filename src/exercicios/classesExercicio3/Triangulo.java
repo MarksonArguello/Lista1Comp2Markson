@@ -1,7 +1,7 @@
 package exercicios.classesExercicio3;
 
 /**
- * @author  Markson Arguello <marksonva@dcc.ufrj.br>
+ * @author  Markson Arguello - marksonva@dcc.ufrj.br
  *
  *
  * Classe para representar um triângulo.

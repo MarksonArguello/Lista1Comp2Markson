@@ -1,7 +1,7 @@
 package exercicios.classesExercicio3;
 
 /**
- * @author  Markson Arguello <marksonva@dcc.ufrj.br>
+ * @author  Markson Arguello - marksonva@dcc.ufrj.br
  *
  *
  * Classe para representar um ponto de um vértice.
@@ -14,8 +14,8 @@ public class Ponto {
 
     /**
      * Construtor de um objeto do tipo Ponto
-     * @param x
-     * @param y
+     * @param x Valor do x
+     * @param y Valor do y
      */
 
     public Ponto(double x, double y){
