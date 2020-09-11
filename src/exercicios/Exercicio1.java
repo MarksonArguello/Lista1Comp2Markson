@@ -99,7 +99,7 @@ public class Exercicio1 {
             }
             catch (InputMismatchException e){
                 System.out.println("====O número lido não é um número real====");
-                sc.next();
+                sc.nextLine();
 
             }
 

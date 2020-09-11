@@ -73,7 +73,7 @@ public class Main {
             }
             catch (InputMismatchException e){
                 System.out.println("====O número lido não é um inteiro====");
-                sc.next();
+                sc.nextLine();
             }
         }while (!numeroLido);
 

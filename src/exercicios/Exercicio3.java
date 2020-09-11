@@ -41,7 +41,7 @@ public class Exercicio3 {
             catch (InputMismatchException e) {
                 System.out.println("Digite um número real");
                 System.out.println();
-                sc.next();
+                sc.nextLine();
             }
         }
         return new Ponto(x, y);
@@ -76,7 +76,7 @@ public class Exercicio3 {
             }
             catch (InputMismatchException e){
                 System.out.println("====O número lido não é um inteiro====");
-                sc.next();
+                sc.nextLine();
             }
         }while (!numeroLido );
         switch (opcao) {
